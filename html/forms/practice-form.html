@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1>Pizza Order</h1>
+</head>
+<form name="pizza" action="success.html" method="post">
+  <fieldset>
+    <div>
+      <label>Customer Name:</label>
+      <input type="text" name="customername">
+    </div>
+
+    <div>
+      <label>Phone Number:</label>
+      <input type="text" name="number">
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <div>
+      <label>Toppings:</label>
+      <textarea rows="4" cols="50" name="toppings" >
+Enter toppings here separated by commas.</textarea>
+    </div>
+
+    <div>
+      <label>Size:</label>
+      <select name="bike">
+        <option value="size">Personal</option>
+        <option value="size">Small</option>
+        <option value="size">Medium</option>
+        <option value="size">Large</option>
+        <option value="size">X-large</option>
+      </select>
+    </div>
+
+    <div>    
+      <label>Delivery Date:</label>
+      <input type="date" name="date">
+    </div>
+    <div>    
+      <label>Delivery Time:</label>
+      <input type="time" name="time">
+    </div>
+
+    <div>
+      <input type="checkbox" name="box" value="agree">
+      I am paying with cash.
+      <input type="checkbox" name="box" value="agree">
+      I am paying with card.
+    </div>
+  </fieldset>
+  
+  <button type="submit">Save this adventure</button>
+</form>
