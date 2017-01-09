@@ -1,0 +1,22 @@
+Wait until elevator doors are open
+Enter elevator
+Walk to elevator buttons
+For each button
+	If number on button is the same number as the floor you want to go to
+		Then press button
+	Continue until reach the desired button then break
+Wait for elevator to reach desired floor
+Wait for doors to open
+Exit elevator
+
+Take milk out of refrigerator
+Take cereal out of pantry
+Take bowl out of cupboard
+Set bowl on table
+Check if bowl has milk in it or not
+	If not, open milk container and pour into bowl
+Check if bowl has cereal in it or not
+	If not, open cereal box and pour into bowl
+Close milk container
+Close cereal box
+Enjoy
