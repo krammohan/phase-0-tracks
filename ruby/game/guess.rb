@@ -21,12 +21,12 @@ class Guess
   #if it doesn't then print out a message saying it's a wrong guess
   #join the dashes array together into a string
   def check_letter(letter)
-  		if @word.include?(letter)
-  			@empty.delete_at(@word.index(letter))
-  			@empty.insert(@word.index(letter), letter)
-  		else
-  			puts "That letter is not in the word!"
-  		end
+  	if @word.include?(letter)
+  		@empty.delete_at(@word.index(letter))
+  		@empty.insert(@word.index(letter), letter)
+  	else
+  		puts "That letter is not in the word!"
+  	end
   	@empty.join('')
   end
   
@@ -35,11 +35,11 @@ class Guess
   #if it does, then they have not won
   #if it does not, then they have won
   def check_status
-		if @empty.include?("-")
-			true
-		else
-			false
-		end
+	if @empty.include?("-")
+		true
+	else
+		false
+	end
   end
   
   #get the length of the word to guess
