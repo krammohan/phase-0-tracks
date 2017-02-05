@@ -1,0 +1,43 @@
+1. SELECT * FROM users, businesses, reviews WHERE reviews.user_id = users.id;
+	1|Mandy|Kaling|1|Grundy Hollow Wedding Chapel|1|5|Amazing service|1|1
+	1|Mandy|Kaling|2|Amir's Towing|1|5|Amazing service|1|1
+	1|Mandy|Kaling|3|The Beagle Nightclub|1|5|Amazing service|1|1
+	1|Mandy|Kaling|4|Lotus Yoga|1|5|Amazing service|1|1
+	1|Mandy|Kaling|5|Plumbing by Janet|1|5|Amazing service|1|1
+	2|Bradford|Pitt|1|Grundy Hollow Wedding Chapel|2|2|Terrible service|1|2
+	2|Bradford|Pitt|2|Amir's Towing|2|2|Terrible service|1|2
+	2|Bradford|Pitt|3|The Beagle Nightclub|2|2|Terrible service|1|2
+	2|Bradford|Pitt|4|Lotus Yoga|2|2|Terrible service|1|2
+	2|Bradford|Pitt|5|Plumbing by Janet|2|2|Terrible service|1|2
+	2|Bradford|Pitt|1|Grundy Hollow Wedding Chapel|3|4|Okay food and okay service|2|2
+	2|Bradford|Pitt|2|Amir's Towing|3|4|Okay food and okay service|2|2
+	2|Bradford|Pitt|3|The Beagle Nightclub|3|4|Okay food and okay service|2|2
+	2|Bradford|Pitt|4|Lotus Yoga|3|4|Okay food and okay service|2|2
+	2|Bradford|Pitt|5|Plumbing by Janet|3|4|Okay food and okay service|2|2
+	
+2. SELECT users.first, businesses.name, reviews.stars FROM users, businesses, reviews WHERE reviews.user_id = users.id;
+	Mandy|Grundy Hollow Wedding Chapel|5
+	Mandy|Amir's Towing|5
+	Mandy|The Beagle Nightclub|5
+	Mandy|Lotus Yoga|5
+	Mandy|Plumbing by Janet|5
+	Bradford|Grundy Hollow Wedding Chapel|2
+	Bradford|Amir's Towing|2
+	Bradford|The Beagle Nightclub|2
+	Bradford|Lotus Yoga|2
+	Bradford|Plumbing by Janet|2
+	Bradford|Grundy Hollow Wedding Chapel|4
+	Bradford|Amir's Towing|4
+	Bradford|The Beagle Nightclub|4
+	Bradford|Lotus Yoga|4
+	Bradford|Plumbing by Janet|4
+	
+3. SELECT users.first, businesses.name, reviews.stars FROM users, businesses, reviews WHERE reviews.business_id = 1;
+	Mandy|Grundy Hollow Wedding Chapel|5
+	Bradford|Grundy Hollow Wedding Chapel|5
+	Angela|Grundy Hollow Wedding Chapel|5
+	Steven|Grundy Hollow Wedding Chapel|5
+	Mandy|Grundy Hollow Wedding Chapel|2
+	Bradford|Grundy Hollow Wedding Chapel|2
+	Angela|Grundy Hollow Wedding Chapel|2
+	Steven|Grundy Hollow Wedding Chapel|2
