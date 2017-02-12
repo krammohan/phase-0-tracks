@@ -42,11 +42,12 @@ def display_books(db)
 end 
 
 # Add a few books to the library to start with
-add_book(db, 'Anna Karenina', 'Leo Tolstoy')
+add_book(db, "Anna Karenina", "Leo Tolstoy")
 add_book(db, "The Adventures of Huckleberry Finn", "Mark Twain")
 add_book(db, "Moby Dick", "Herman Melville")
 add_book(db, "Harry Potter and the Sorcerer's Stone", "J.K. Rowling")
 
+# Driver code
 puts "Welcome to the library! Type 'add' to add a book, 'checkout' to check out a book,'view' to view books in the library,'delete' if you want to remove a book from the library, or 'exit'."
 while response = gets.chomp.to_s
 puts "Welcome to the library! Type 'add' to add a book, 'checkout' to check out a book,'view' to view books in the library,'delete' if you want to remove a book from the library, or 'exit'."
