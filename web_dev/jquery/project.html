@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+    $(".incorrect").click(function(){
+        $(this).hide();
+    });
+    
+    $(".correct").click(function(){
+    	$(this).css('color', 'red');
+    });
+    
+    $("h2").mouseover(function(){
+    	$(this).css('font-style', 'italic');
+    });
+    
+    $("h2").mouseout(function(){
+    	$(this).css('font-style', 'normal');
+    });
+    
+});
+
+
+
+</script>
+</head>
+<body>
+
+<h1>Click on all of the misspelled words below to make them disappear.</h1>
+<h2 class = "correct">singe</h2>
+<h2 class = "correct">misspelled</h2>
+<h2 class = "incorrect">plachate</h2>
+<h2 class = "incorrect">garagantuan</h2>
+<h2 class = "correct">docile</h2>
+<h2 class = "correct">sustenance</h2>
+<h2 class = "incorrect">halycon</h2>
+
+</body>
+</html>
